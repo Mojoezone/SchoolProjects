@@ -1,0 +1,761 @@
+html{
+  font-family: 'Open Sans', sans-serif, arial, helvetica;
+  background-color: #EBEBEB;
+}
+.cf:after, .cf:before{
+  content: " ";
+  display: table;
+}
+.cf:after{
+  clear: both;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+a:hover, i:hover,header div:first-child i:hover,footer div:first-child i:hover, button:hover{
+  color: #466BB0;
+}
+img{
+  width: 100%;
+}
+
+a.active{
+  color: #466BB0;
+}
+.breadcrumbs{
+  clear: both;
+  font-size: .9em;
+  padding-left:  .5em;
+}
+.icon-phone-circled span{
+  display: none;
+}
+/*--------- end universal-----------*/
+
+header{
+  height: 7em;
+  margin-bottom: 1em;
+}
+header div:first-child{
+  width: 100%;
+  height: 1.8em;
+  background-color: #111;
+}
+header>div div:first-child{
+  text-align: right;
+}
+header div:first-child i{
+  font-size: 1.2em;
+  color: #ebebeb;
+  line-height: 1.5;
+  padding: 0 4.5%;
+}
+header div+div a img{
+  width: 7.6em;
+  padding: 1em .5em .5em .5em;
+}
+#menu{
+  font-size: 2em;
+  float: right;
+  padding: .5em 0 0 .5em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+/*----------------end header -------------*/
+
+header+div{
+  font-size: 1.3em;
+  background-color: #999;
+  text-align: right;
+}
+header+div a{
+  color: #000;
+}
+header+div i{
+  line-height: 2;
+  padding-right: .5em;
+}
+#logIn{
+  cursor: pointer;
+}
+#mySearch{
+  display: none;
+}
+#logInShow{
+  display: none;
+  padding: 0 .5em .3em 0;
+}
+#logInShow p{
+  font-size: .6em;
+  line-height: 1;
+  padding-right: .5em;
+}
+/*------------end login/search ---------*/
+.navOnOff{
+  display: block;
+}
+nav{
+  background-color: #000;
+  display: none;
+}
+nav ul li{
+  border-bottom: 1px solid #ebebeb;
+  padding: .2em 0 .2em .5em;
+}
+nav ul li a{
+  color: #ebebeb;
+  font-weight: bold;
+  line-height: 1.5;
+}
+nav li>ul li{
+  border-bottom: none;
+}
+nav li>ul li a{
+  font-weight: normal;
+}
+
+/*----------------end nav -------------*/
+.nav+div{
+  padding-bottom: 80%;
+  height: 0;
+}
+#slider{
+  clear: both;
+  width: 100%;
+  position: relative;
+}
+.slide{
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 2s;
+}
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+.slidebtn{
+  width: 100%;
+  position: absolute;
+  top: 7em;
+  z-index: 10;
+}
+.slidebtn li{
+  float: left;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #999;
+}
+.slidebtn li i{
+  padding: 1em .5em;
+}
+.slidebtn li i:hover{
+  color: #000;
+  background-color: #999;
+}
+#nextbtn{
+  float: right;
+}
+/*------------end slide----------------*/
+
+main{
+  clear: both;
+}
+
+h1{
+  font-size: 1.3em;
+  line-height: 3;
+  font-weight: bold;
+  text-align: center;
+}
+main >div > section{
+  clear: left;
+  margin: 3em 0;
+}
+main >div > section > figure{
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+main >div > section figure+figure{
+  width: 25%;
+  margin-top: 1em;
+}
+main >div > section > figure figcaption{
+  margin-top: .2em;
+}
+main >div > section > figure h5 a{
+  color: #5E5E5E;
+  font-size: .9em;
+  line-height: 1.5;
+  font-weight: bold;
+  border: 1px solid #5E5E5E;
+  border-radius: .2em;
+  padding: 0 .5em;
+}
+main > div > section > figure h5 a:hover{
+  background-color:#111;
+}
+
+main > div > form{
+  clear: left;
+  width: 80%;
+  margin: 0 auto;
+    padding-bottom: 5em;
+}
+main > div > form input, main > div > form label{
+  width: 100%;
+  float: left;
+  padding: .5em 0 .2em 0;
+  border-radius: .2em;
+}
+main > div > form input{
+margin-bottom: 1em;
+}
+
+main > div > form button{
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  width: 30%;
+  margin: .5em 0 0 30%;
+  border-radius: .2em;
+}
+main > div > form button:hover{
+  background-color: #111;
+}
+main > div > form textarea{
+  width: 100%;
+  height: 9.125em;
+  float: left;
+  padding: .5em 0 .2em 0;
+  border-radius: .2em;
+  resize: none;
+  margin-bottom: 1em;
+}
+/*---------------end main--------------------------*/
+
+#toTop{
+  font-size: 2.5em;
+  color: rgba(0,0,0,.8);
+  z-index: 9999;
+  position: fixed;
+  top: 80%;
+  right: 5%;
+  display: none;
+}
+/*---------------end back to top--------------------------*/
+
+footer{
+  font-size: 1.1em;
+  clear: left;
+  background-color: #111;
+  min-height: 20em;
+  padding: .5em 0;
+  color: #ebebeb;
+  position: relative;
+}
+footer>div div:first-child i{
+  font-size: 1.1em;
+  color: #ebebeb;
+  line-height: 1.5;
+  padding: 0 4.5%;
+}
+footer table{
+  display: table;
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+}
+footer table td{
+  font-size: .85em;
+}
+footer table th{
+  font-weight: bold;
+}
+footer table th, footer table td{
+  padding: 1% 2%;
+}
+footer table a{
+  line-height: 1.2;
+  color: #ebebeb;
+}
+footer table tr:last-child{
+  padding-top: 1em;
+  font-size: .8em;
+}
+footer p{
+  font-size: .7em;
+  position: absolute;
+  bottom: .5em;
+  left: 10%;
+}
+footer p span{
+  font-size: .9em;
+}
+/*---------end footer--------------*/
+/*--------- end home page--------------*/
+
+
+/*--------- starts features--------------*/
+h1+div figure p{
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+h1+div figure p a{
+  color: #111;
+}
+/*--------- starts About--------------*/
+main .aboutText{
+  word-spacing: .05em;
+  padding: .5em;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #111;
+}
+main .aboutText p{
+  padding-bottom: 1em;
+}
+
+main .aboutText p a{
+  color: #466BB0;
+}
+/*-----------------------start Contact----------------------------*/
+
+/*--------- starts Home Security and office Security--------------*/
+.hopsecurity h1{
+  font-size: 1em;
+  padding: .5em 0;
+}
+.hopsecurity div:nth-child(3){
+  width: 90%;
+  margin: 0 auto;
+}
+.hopsecurity div:nth-child(3)>div{
+  width: 100%;
+}
+.hopsecurity div:nth-child(3)>div img{
+  box-shadow: 2px 2px 3px #333;
+}
+
+/*--------- starts others, video and audio--------------*/
+.vaoproducts h1{
+  font-size: 1.5em;
+  text-shadow: 2px 2px 2px #999;
+}
+.vaoproducts >div div:nth-child(3){
+  width: 90%;
+  margin: 0 auto;
+}
+.vaoproducts >div div:nth-child(3)>div{
+  width: 100%;
+}
+.vaoproducts>div div:nth-child(3)>div img{
+  box-shadow: 4px 4px 4px #333;
+}
+.vaoproducts >div div:nth-child(3) div:last-child figure, .hopsecurity >div div:nth-child(3) div:last-child figure{
+  margin-bottom: 5em;
+}{
+  margin-bottom: 5em;
+}
+
+/*-----------Aff marketing,Career, Legal, sitemap and 404------------*/
+.error404{
+  margin: 0;
+}
+.error404 div:first-child{
+  color: #f00;
+  text-align: center;
+  background: url(../images/404.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 40em;
+}
+.error404 div:first-child h4{
+  font-size: 3em;
+  line-height: 3;
+  text-shadow: 2px 2px 2px #111;
+}
+.error404 div:first-child p{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.sitemap table{
+  width: 100%;
+}
+.sitemap table td{
+  padding: 1% 2%;
+}
+.legal section:nth-child(3), .career section:nth-child(3){
+  margin: 0;
+  padding: 0 .5em;
+}
+.legal h2, .career h2{
+  line-height: 3;
+}
+.legal p{
+  padding-bottom: .5em;
+}
+.legal h2, .legal section span, .career h2{
+  font-weight: bold;
+  color: #111;
+}
+.legal section:nth-child(3) ul{
+  padding: .5em 0 .5em 2em;
+}
+.legal section:nth-child(3) ul li{
+  list-style:initial;
+  padding-bottom: .5em;
+}
+.career section:nth-child(3) p{
+  line-height: 1.2;
+  padding-bottom: .5em;
+}
+.career section span{
+  font-size: 1.2em;
+}
+
+.career h1, .legal h1{
+  text-align: left;
+  padding-left: .3em;
+}
+.aff div{
+  /*18.75em*/
+  width: 50%;
+  float: left;
+  margin: 2em 0;
+  /*height: 15.625em;*/
+}
+@media only screen and (min-width: 480px){
+
+  footer>div div:first-child{
+    text-align: center;
+    font-size: 1.4em;
+  }
+  main > div > section > figure{
+    width: 20%;
+    margin: 0 0 0 0;
+    margin: 2em 0 3em 20%;
+    float: left;
+  }
+  main > div > section figure+figure{
+    width: 12%;
+    margin-top: 2.5em;
+  }
+  main > div > section figure+figure img{
+    margin-left: .5em;
+  }
+  .slidebtn{
+    top: 14em;
+  }
+  /*----------end header, call, location----------------*/
+
+  /*-----start content images-------*/
+  h1+div figure{
+    width: 60%;
+    float: left;
+    margin-left: 20%;
+  }
+  .hopsecurity>div div:nth-child(3) div figure, .vaoproducts>div div:nth-child(3) div figure{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .hopsecurity h1{
+    font-size: 1.5em;
+  }
+  /*---------end product images-----------*/
+  .aff div{
+    width: 40%;
+    margin-left: 6%;
+  }
+  .career section span{
+    font-weight: bold;
+  }
+  .legal section:nth-child(3), .career section:nth-child(3){
+    padding: 0 1em;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  header{
+    height: 9em;
+  }
+  header div:first-child{
+    height: 2.8em;
+  }
+  header div:first-child i{
+    font-size: 1.5em;
+    line-height: 1.7;
+    padding: 0 4.5%;
+  }
+  .icon-phone-circled span{
+    font-size: .8em;
+    display: inline;
+  }
+  /*------header--------*/
+  main > div > section figure+figure img{
+    margin-left: 0;
+  }
+  main > div > section > figure{
+    margin: 5em 0 5em 20%;
+  }
+  main > div > section figure+figure{
+    margin-top: 5.5em;
+  }
+  main > div > form{
+    clear: left;
+    width: 60%;
+    margin: 0 auto;
+  }
+  main > div > form button{
+    width: 20%;
+  }
+  .slidebtn{
+    top: 22em;
+  }
+/*-------------end main content--------------*/
+h1+div figure{
+  width: 30%;
+  margin-left: 14%;
+}
+main .aboutText, main .career{
+  padding: 0 6.5em;
+}
+.vaoproducts>div div:nth-child(3) div figure{
+  width: 30%;
+  margin-left: 15%;
+}
+.hopsecurity>div div:nth-child(3) div figure p, .vaoproducts>div div:nth-child(3) div figure p{
+  line-height: 2;
+}
+footer table{
+  margin-top: 3em;
+}
+footer{
+  min-height: 25em;
+}
+/*--------------------*/
+  .aff div{
+    margin-top: 5em;
+    width: 25%;
+    margin-left: 16%;
+  }
+
+}
+
+
+@media only screen and (min-width: 1056px){
+  header div:last-child, .dtopversion, nav ul, .nav+div div, main > div, .aff, footer>div, .breadcrumbs div{
+    max-width: 60em;
+    margin: 0 auto;
+  }
+  header>div>div:first-child{
+    text-align: center;
+  }
+  header>div>div:first-child i{
+    padding: 0 11.5%;
+    padding-right: 0;
+    text-align: center;
+  }
+  #menu{
+    display: none;
+  }
+  header{
+    margin-bottom: 0;
+  }
+  header+div{
+    font-size: 1em;
+    background-color: #ebebeb;
+  }
+  header div+div a img{
+    width: 10em;
+  }
+  .dtopversion{
+    position: relative;
+    top: -5em;
+    right: 0;
+    z-index: 25;
+  }
+#logInShow,#logInShow,#logInShow input{
+  float: right;
+  margin-left: .5em;
+}
+#logInShow input{
+  font-size: .7em;
+  margin-top: .5em;
+}
+#logInShow p{
+  display: none;
+}
+  nav{
+    line-height: 3;
+    width: 100%;
+    display: inline-block;
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+    border-bottom: none;
+    padding-right: 4em;
+  }
+.smcont{
+  position: relative;
+}
+  .submenu{
+    width: 150%;
+    background-color: #000;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    display:none;
+    z-index: 99999;
+  }
+  .smcont:hover .submenu{
+    display: block;
+  }
+  .submenu li a{
+    line-height: 1;
+    padding-left: .5em;
+  }
+.nav+div{
+  padding-bottom: 46.975em;
+}
+  .slidebtn{
+    top: 24em;
+  }
+  main{
+    background-color: #FFF;
+  }
+  h1{
+    line-height: 6;
+  }
+
+footer table{
+  margin-top: 3em;
+  text-align: left;
+}
+footer table th, footer table td{
+  text-align: left;
+}
+footer>div div:first-child{
+  text-align: left;
+}
+footer>div div:first-child i{
+  padding-left: 0.5em;
+}
+footer>div p{
+  position: static;
+  margin-top: 8em;
+  text-align: left;
+}
+.breadcrumbs{
+  margin-left: 0;
+}
+.career section:first-of-type{
+  padding-bottom: 2em;
+}
+h1 + div figure{
+  margin-left: 2.5%;
+}
+.ssteam{
+  width: 59%;
+}
+.stickyNav{
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+.nav{
+  height: 3.375em;
+}
+}
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?635976');
+  src: url('../font/fontello.eot?635976#iefix') format('embedded-opentype'),
+  url('../font/fontello.woff2?635976') format('woff2'),
+  url('../font/fontello.woff?635976') format('woff'),
+  url('../font/fontello.ttf?635976') format('truetype'),
+  url('../font/fontello.svg?635976#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: 'fontello';
+src: url('../font/fontello.svg?635976#fontello') format('svg');
+}
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-menu:before { content: '\e800'; } /* '' */
+.icon-right-open:before { content: '\e801'; } /* '' */
+.icon-left-open:before { content: '\e802'; } /* '' */
+.icon-location-circled:before { content: '\e803'; } /* '' */
+.icon-phone-circled:before { content: '\e804'; } /* '' */
+.icon-login:before { content: '\e805'; } /* '' */
+.icon-logout:before { content: '\e806'; } /* '' */
+.icon-cancel-circled:before { content: '\e807'; } /* '' */
+.icon-search-circled:before { content: '\e808'; } /* '' */
+.icon-location:before { content: '\e809'; } /* '' */
+.icon-instagram-circled:before { content: '\f05e'; } /* '' */
+.icon-up-circled:before { content: '\f0aa'; } /* '' */
+.icon-twitter-circled:before { content: '\f30a'; } /* '' */
+.icon-facebook-circled:before { content: '\f30d'; } /* '' */
